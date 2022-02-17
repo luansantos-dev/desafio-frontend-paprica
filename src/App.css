@@ -1,0 +1,97 @@
+:root{
+    --color-white: #FFF;
+    --color-bg: #FBFAFA;
+    --color-yellow: #E39B00;
+    --color-black: #101010;
+    --color-gray: #4C4C4C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  position: relative;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("/src/assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+ 
+}
+
+body, h1, h2, h3, p, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
+
+.container {
+  max-width: 160rem;
+  margin: 0 auto 0 auto;
+}
+
+.btn{
+  padding: 1.6rem 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  border-radius: 10rem;
+  border: 2px solid #9B9AA6;
+  color: var(--color-gray);
+  background: var(--color-bg);
+  cursor: pointer;
+  transition: all .2s;
+
+}
+
+.btn:hover{
+  background-color: var(--color-yellow)!important;
+  color: var(--color-white);
+  border: 2px solid var(--color-yellow);
+
+}
+
+.active{
+  color: var(--color-yellow) !important;
+  background: var(--color-bg);
+  border-radius: 0.6rem;
+  padding: 0.6rem 0;
+}
+
+@media(max-width: 700px){
+  body{
+    background: none;
+  }
+}
+

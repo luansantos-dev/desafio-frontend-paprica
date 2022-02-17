@@ -1,0 +1,44 @@
+.about {
+  max-width: 55.4rem;
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 4rem;
+}
+
+.about h1 {
+  grid-column: 2;
+  font-size: 2.4rem;
+  font-weight: 700; 
+  color: var(--color-yellow);
+}
+
+.about p {
+  color: var(--color-gray);
+  grid-column: 2;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+.about span {
+  width: 12rem;
+  height: 0.6rem;
+  background-color: var(--color-black);
+  columns: 1;
+}
+
+
+
+@media(max-width: 770px){
+  .about {
+    max-width: 40rem;
+    gap: 1rem;
+    position: relative;
+    bottom: 7rem;
+  }
+  
+  .about span {
+    width: 4rem;
+  }
+}
