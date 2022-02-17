@@ -28,7 +28,7 @@ const Slide = ({ slides }) => {
     const autoplay = setTimeout(() => {
       prev();
       next();
-    }, 6000);
+    }, 4000);
     return () => clearTimeout(autoplay);
   });
 
