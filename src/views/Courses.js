@@ -3,7 +3,10 @@ import styles from "./Couses.module.css";
 
 const Courses = () => {
   return (
-    <section className={styles.container} arial-label="main cursos">
+    <section
+      className={`${styles.container} animePages`}
+      arial-label="main cursos"
+    >
       <h1 className={styles.title}>Main Courses</h1>
       <p className={styles.text}>Página em Construção</p>
     </section>

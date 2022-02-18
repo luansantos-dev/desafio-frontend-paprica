@@ -25,6 +25,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
  
 }
 
@@ -59,6 +60,7 @@ img{
 .container {
   max-width: 160rem;
   margin: 0 auto 0 auto;
+  
 }
 
 .btn{
@@ -89,7 +91,20 @@ img{
   padding: 0.6rem 0;
 }
 
-@media(max-width: 700px){
+.animePages{
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: animePages .3s forwards;
+}
+
+@keyframes animePages{
+  to{
+      opacity: 1;
+      transform: initial;
+  }
+}
+
+@media(max-width: 1024px){
   body{
     background: none;
   }

@@ -1,5 +1,16 @@
 .footer{
     padding: 2rem 0;
     position: relative;
-    top: 7rem;
+}
+
+@media(max-width: 1024px){
+    .footer{
+        top: 8rem;
+    }
+}
+
+@media(max-width: 460px){
+    .footer{
+        top: 2rem;
+    }
 }

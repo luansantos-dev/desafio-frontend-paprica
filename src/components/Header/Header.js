@@ -45,7 +45,10 @@ const Header = () => {
                 <NavLink to="/course">Main Course</NavLink>
               </li>
             </ul>
-            <input type="search" placeholder="Search"></input>
+            <div className={styles.search}>
+              <input type="search" placeholder="Search"></input>
+              <button></button>
+            </div>
           </nav>
           {mobile && (
             <button

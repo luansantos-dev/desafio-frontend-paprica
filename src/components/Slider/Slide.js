@@ -48,7 +48,10 @@ const Slide = ({ slides }) => {
                 className={styles.img}
               ></img>
             </picture>
-            <p className={styles.title}>{slide.text}</p>
+            <p className={styles.title}>
+              {`${slide.text} `}
+              <span>Burger</span>
+            </p>
           </div>
         ))}
       </div>
